@@ -11,6 +11,7 @@ env:
     matrix:
         - BACKEND=numpy
         - BACKEND=mxnet
+        - BACKEND=pytorch
 # command to run tests
 script:
     - travis_wait make BACKEND=numpy test-coverage
